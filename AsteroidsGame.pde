@@ -6,7 +6,6 @@ public void setup()
   for(int i = 0; i < john.length; i++) 
     john[i] = new Star();
 }
-
 public void draw() 
 {
   background(0);
