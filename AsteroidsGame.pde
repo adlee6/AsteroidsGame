@@ -7,21 +7,21 @@ public void setup()
   size(500,500);
   for(int i = 0; i < john.length; i++) 
     john[i] = new Star();
-  for(int i = 0; i < 10; i++)
+  for(int i = 0; i < 100; i++)
   jerry.add(new Asteroid());
 }
 public void draw() 
 {
   background(0);
-  for(int i = 0; i < john.length; i++)
-  john[i].show();
   bob.show();
   bob.move();
+  for(int i = 0; i < john.length; i++)
+  john[i].show();
   for(int i = 0; i<jerry.size(); i++){
     jerry.get(i).show();
     jerry.get(i).move();
     float d = dist(bob.getX(),bob.getY(),jerry.get(i).getX(),jerry.get(i).getY());
-    if (d < 15)
+    if (d < 50)
       jerry.remove(i);
   }
 }
@@ -52,4 +52,3 @@ public void keyPressed()
     bob.setDirection((int)(Math.random()*360));
   }
 }
-
