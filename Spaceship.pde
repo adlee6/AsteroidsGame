@@ -41,4 +41,4 @@ class Spaceship extends Floater {
      fill(myColor);
      super.show();
     }
-}  
+}
