@@ -7,7 +7,7 @@ public void setup()
   size(500,500);
   for(int i = 0; i < john.length; i++) 
     john[i] = new Star();
-  for(int i = 0; i < 100; i++)
+  for(int i = 0; i < 30; i++)
   jerry.add(new Asteroid());
 }
 public void draw() 
