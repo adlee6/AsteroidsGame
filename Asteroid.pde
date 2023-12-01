@@ -31,7 +31,6 @@ class Asteroid extends Floater {
   }
   public void show() {
     noFill();
-    scale(mySize);
     super.show();
   }
   public float getX() {
