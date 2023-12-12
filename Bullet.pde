@@ -1,10 +1,10 @@
 class Bullet extends Floater {
-  public Bullet(Spaceship theShip) {
-    myCenterX = theShip.getX();
-    myCenterY = theShip.getY();
-    myXspeed = theShip.Xspeed();
-    myYspeed = theShip.Yspeed();
-    myPointDirection = theShip.getDirection();
+  public Bullet() {
+    myCenterX = bob.getX();
+    myCenterY = bob.getY();
+    myXspeed = bob.Xspeed();
+    myYspeed = bob.Yspeed();
+    myPointDirection = bob.getDirection();
     accelerate(6.0);
     myColor = color(3,96,252);
   }
