@@ -16,7 +16,7 @@ public void draw()
 {
   background(0);
   for(int i = 0; i < john.length; i++)
-      john[i].show();
+  john[i].show();
   bob.show();
   bob.move();
   for(int i = 0; i < obj.size(); i++) {
@@ -36,7 +36,8 @@ public void draw()
       obj.remove(j);
       break;
       }
-    }   
+    }
+    
   }
 }
 
@@ -58,14 +59,13 @@ public void keyPressed()
    bob.setXspeed(0);
    bob.setYspeed(0);
   }
-  if(key == 'x') {
+   if(key == 'x') {
     bob.setXspeed(0);
     bob.setYspeed(0);
     bob.setCenterX((int)(Math.random()*300));
     bob.setCenterY((int)(Math.random()*300));
     bob.setDirection((int)(Math.random()*360));
   }
-  if(key == 'f') {
+  if(key == 'f')
     obj.add(new Bullet());
-  }
 }
