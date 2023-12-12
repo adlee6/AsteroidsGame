@@ -66,6 +66,6 @@ public void keyPressed()
     bob.setDirection((int)(Math.random()*360));
   }
   if(key == 'f') {
-    obj.add(new Bullet(bob));
+    obj.add(new Bullet());
   }
 }
